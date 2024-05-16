@@ -1,4 +1,4 @@
-# Astragalus-Phylogenetics
+![image](https://github.com/grillolab/Astragalus-Phylogenetics-/assets/141146613/e9f98f28-f758-4c40-929c-905899d51bae)# Astragalus-Phylogenetics
 Author: Victoria Martinez. 
 
 This is the overall pipeline I used to analyze the Novaseq Illumina reads and build phylogenies
@@ -38,6 +38,10 @@ Second, multiqc is run and we create a csv file with all the information. Multiq
 ```
 multiqc .  --export csv
 ```
+When analysing the html file produced from multiqc, there will be several tabs to look at such as GC content, adapter content, and also sequence quality score which is one of the most important and should look something like the image below. If any sequences had sequence quality falling under 29 (in the yellow or red region) that would indicate unreliable sequences and probably would have to be taken out. 
+![image](https://github.com/grillolab/Astragalus-Phylogenetics-/assets/141146613/396855c1-6dbd-48fd-9ae3-607e97382768)
+
+
 
 ## Step Three:  Analyzing nuclear data
 Depencencies required: HybPiper (https://github.com/mossmatters/HybPiper/wiki), raxml (https://github.com/amkozlov/raxml-ng/wiki), Astral (https://github.com/smirarab/ASTRAL), figtree (https://tree.bio.ed.ac.uk/software/figtree/)
@@ -68,6 +72,9 @@ The following command takes the stats summary from b) and creates a visual summa
 ```
 hybpiper recovery_heatmap seq_lengths.tsv
 ```
+It will look something lik this: 
+![Copy of Thesis Defense](https://github.com/grillolab/Astragalus-Phylogenetics-/assets/141146613/450499e5-184c-4378-859c-704787f7c7d7)
+
 
 ### d) Fourth hybpiper command: retrieving sequences 
 Parameters can be changed in the following command based on whether the user wants to retrieve gene or supercontig (might include more information about the flanking regions). Generally, people retrieve the genes 
@@ -146,4 +153,7 @@ java -jar astral.5.7.8.jar -i concatenated_trees.tre -o astragalus.astral_consen
 ```
 
 ### Step 9: Visualizing tree: FigTree
+FigTree is a GUI where you can upload a tree file in .tre format or other formats as well. You can do things such as rerooting, and rotating branches to make it more visually appealing, of course withou changing the inherent structure and relationships of the tree. This is what it looks like:
+![image](https://github.com/grillolab/Astragalus-Phylogenetics-/assets/141146613/6fd4a0d3-b913-47c0-9134-b653d1edcd07)
+
 
