@@ -147,14 +147,16 @@ Astral in the next step, will analyze all the gene trees and create a species tr
 cat *output_tree > concatenated_trees.tre
 ```
 ### Step 8: Concatanate trees with Astral 
-Astral will generate a species tree. Use following code: 
+Astral (https://github.com/smirarab/ASTRAL) will generate a species tree. Use following code: 
 ```
 java -jar astral.5.7.8.jar -i concatenated_trees.tre -o astragalus.astral_consensus.tre
 ```
 
 ### Step 9: Visualizing tree: FigTree
-FigTree is a GUI where you can upload a tree file in .tre format or other formats as well. You can do things such as rerooting, and rotating branches to make it more visually appealing, of course withou changing the inherent structure and relationships of the tree. This is what it looks like:
+FigTree (https://evomics.org/resources/software/molecular-evolution-software/figtree/) is a GUI where you can upload a tree file in .tre format or other formats as well. You can do things such as rerooting, and rotating branches to make it more visually appealing, of course withou changing the inherent structure and relationships of the tree. This is what it looks like:
 ![image](https://github.com/grillolab/Astragalus-Phylogenetics-/assets/141146613/6fd4a0d3-b913-47c0-9134-b653d1edcd07)
 
 ### Step 10: "beautifying" the phylogeny 
-While the phylogeny from FigTree is a great place to start, unless you know what to look for it is a bit hard to tell the different groups apart. Therefore, it needed some hihglighting and color coding. Using the Tree from FigTree, I used a program called InkScape (GUI to download on computer) to make these color coded highlights. It also allows you to edit the text of the terminal branches, expand, narrow, etc. Using inkscape, the tree should look something like this: 
+While the phylogeny from FigTree is a great place to start, unless you know what to look for it is a bit hard to tell the different groups apart. Therefore, it needed some hihglighting and color coding. Using the Tree from FigTree, I used a program called InkScape (GUI to download on computer: https://inkscape.en.softonic.com/download) to make these color coded highlights. It also allows you to edit the text of the terminal branches, expand, narrow, etc. Using inkscape, the tree should look something like this: 
+![image](https://github.com/grillolab/Astragalus-Phylogenetics-/assets/141146613/17c8f659-9a43-4fcb-beb8-67aaedc25ee4)
+
