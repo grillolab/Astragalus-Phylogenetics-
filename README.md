@@ -1,4 +1,4 @@
-![image](https://github.com/grillolab/Astragalus-Phylogenetics-/assets/141146613/e9f98f28-f758-4c40-929c-905899d51bae)# Astragalus-Phylogenetics
+# Astragalus-Phylogenetics
 Author: Victoria Martinez. 
 
 This is the overall pipeline I used to analyze the Novaseq Illumina reads and build phylogenies
