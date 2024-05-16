@@ -1,8 +1,8 @@
-# Astragalus-Phylogenetics
+# Astragalus-Phylogenetics: Nuclear approach 
 Author: Victoria Martinez. 
 
 This is the overall pipeline I used to analyze the Novaseq Illumina reads and build phylogenies
-Hello future Grillo Lab members, below I will document every step of the pipeline I used/created to process my Astragalus data. 
+Hello future Grillo Lab members, below I will document every step of the pipeline I used/created to process my Astragalus nuclear data. 
 Most of the dependencies I used were already installed on the Smithsonian server I used to analyze my data, therefore I will not be listing the steps to download and install these dependencies although, where possible, I will link the website to those tools where download information must be found. 
 
 ## Downloading data 
